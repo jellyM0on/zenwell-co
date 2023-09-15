@@ -3,36 +3,47 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import {createBrowserRouter, RouterProvider, Outlet, Routes, Route} from 'react-router-dom'
 
+import NavBar from "./components/nav-bar"
 import Home from './pages/home'
 import ErrorPage from './pages/error'
 
 import TestPage from './pages/testpage'
 
+const Layout = () => {
+  return(
+    <div>
+    <NavBar/>
+
+    <Outlet/>
+  </div>
+  )
+ 
+}
 const router = createBrowserRouter([
   {
-    path: '/', 
-    element: <Home/>,
+    path: '/',
+    element: <Layout />,
     errorElement: <ErrorPage/>,
     children: [
-      
+      {
+        path: "/",
+        element: <Home/>,
+      },
+      {
+        path: "/test",
+        element: <TestPage />
+      }
     ]
-  }, 
-  {
-    path: 'test/', 
-    element: <TestPage/>
   }
+ 
   
 ]); 
 
 function App() {
-  
-
   return (
-    <>
-      <RouterProvider router={router}/>
-    </>
+    <RouterProvider router={router}/>
   )
 }
 

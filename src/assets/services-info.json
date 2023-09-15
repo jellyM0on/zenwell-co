@@ -1,0 +1,43 @@
+{
+    "services": [
+        {
+            "title": "ZenGlow Spa and Wellness Retreats", 
+            "description": "Experience the ultimate in relaxation and rejuvenation with our ZenGlow Spa and Wellness Retreats. Indulge in a range of luxurious spa treatments, including massages, facials, and aromatherapy, all set against the backdrop of our serene wellness retreat locations.",
+            "full-description": "", 
+            "imgs": [ "../assets/services/services-spa-1.jpg", "../assets/services/services-spa-2.jpg"
+            ]
+        }, 
+        {
+            "title":"SoulHarbor Spiritual Retreats", 
+            "description": "Embark on a spiritual journey with our SoulHarbor Spiritual Retreats. These retreats provide a nurturing space for self-discovery, meditation, and soulful connection. Explore practices such as mindfulness, chakra healing, and sound therapy in a supportive and tranquil environment.", 
+            "full-description": "", 
+            "imgs": ["../assets/services/services-spiritual-1.jpg"
+
+            ]
+        }, 
+        {
+            "title":"EcoWell Teambuilding Initiatives", 
+            "description": "EcoWell Sustainability Team Building Program is an innovative and engaging team-building experience that combines sustainability initiatives with the power of teamwork. Designed for groups of all sizes, this program empowers your team to make a positive impact on the environment while strengthening bonds, communication, and collaboration among team members.", 
+            "full-description": "", 
+            "imgs": ["../assets/services/services-teambuilding-1.jpg"
+
+            ]
+        },
+        {
+            "title":"MindfulJourney Workshops and Courses", 
+            "description": "Dive deeper into mindfulness and well-being with our MindfulJourney Workshops and Courses. Led by expert instructors, these online and in-person workshops cover topics such as stress reduction, mindful eating, and emotional resilience, empowering you to incorporate mindfulness into every aspect of your life.", 
+            "full-description": "", 
+            "imgs": ["../assets/services/services-workshop-1.jpg"
+
+            ]
+        }, 
+        {
+            "title":"ReviveLife Holistic Nutrition Programs", 
+            "description": "Our ReviveLife Holistic Nutrition Programs are designed to revitalize your health from the inside out. Work with our certified nutritionists to create personalized meal plans, learn about nourishing your body, and discover the joy of healthy eating habits.", 
+            "full-description": "", 
+            "imgs": ["../assets/services/services-nutrition-1.jpg"
+
+            ]
+        }
+    ]
+}

@@ -41,7 +41,16 @@ const router = createBrowserRouter([
   
 ]); 
 
+function getServicesData(){
+  fetch('./assets/service-info.json')
+  .then(res => {
+    return res.json(); 
+  })
+  .then(data => console.log(data)); 
+}
+
 function App() {
+
   return (
     <RouterProvider router={router}/>
   )

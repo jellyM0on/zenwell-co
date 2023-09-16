@@ -1,24 +1,34 @@
-import Spa from '../assets/services/services-spa-1.jpg'
-import Spa2 from '../assets/services/services-spa-2.jpg'
+import Spa1 from '../assets/services/services-spa-1.jpg'
+import Spiritual1 from '../assets/services/services-spiritual-1.jpg'
+import Nutrition1 from '../assets/services/services-nutrition-1.jpg'
+import Teambuilding1 from '../assets/services/services-teambuilding-1.jpg'
+import Workshop1 from '../assets/services/services-workshop-1.jpg'
 
 
-export default function HomeServices({services}){
+import info from '../assets/services-info.json'
 
+export default function HomeServices(){
 
     const Card = ({title, img, description}) => {
         return(
             <div id='home-service-card' className='flex flex-col justify-center text-[#FFFAE4] h-fit '>
-                <h3 className='leading-[0.75em] font-bold'>{title}</h3>
-                <img src={img} alt='Sample Image' className='self-center ' />
+                <h3 className='leading-[0.75em] font-bold z-10'>{title}</h3>
+                <img src={img} alt='Sample Image' className='self-center opacity-[0.80]' />
                 <p className='self-center text-right w-[60%] text-[0.75em] leading-[1em] m-0'>
                     {description}
                 </p>
-                <button className='self-start ml-[60px] mt-[-40px] 
+                <button className='self-start ml-[30px] mt-[-40px] 
                     text-[0.75em] p-[0.25em] hover:underline'>
                     Learn more	&gt;</button>
             </div>
         )
     }
+
+    let services = info.services; 
+    let servicesImgs = [Spa1, Spiritual1, Teambuilding1, Workshop1, Nutrition1];
+
+    console.log(servicesImgs); 
+
     return(
         <section id='home-services' className='flex min-h-[100vh]'> 
             <div id='' class="left">
@@ -32,33 +42,8 @@ export default function HomeServices({services}){
 
             <div class="right">
 				<div class="inner bg-[#707a4cfe]">
-					<div id='home-service-card' className='flex flex-col justify-center text-[#FFFAE4] h-fit '>
-                        <h3 className='leading-[0.75em] font-bold'>ZenGlow Spa Retreat</h3>
-                        <img src={Spa} alt='Sample Image' className='self-center ' />
-                        <p className='self-center text-right w-[60%] text-[0.75em] leading-[1em] m-0'>
-               Experience the ultimate in relaxation and rejuvenation with our ZenGlow Spa and Wellness Retreats. Indulge in a range of luxurious spa treatments, including massages, facials, and aromatherapy, all set against the backdrop of our serene wellness retreat locations.
-                        {/* <br></br><br />
-                        <span> <button>Learn more...</button> </span> */}
-                        </p>
-                        <button className='self-start ml-[60px] mt-[-40px] 
-                        text-[0.75em] p-[0.25em] hover:underline'>
-                            Learn more	&gt;</button>
-                 
-                      
-                    </div>
-                    
-                    <div id='home-service-card' className='flex flex-col justify-center text-[#FFFAE4]'>
-                        <h3 className='leading-[0.75em] font-bold'>ZenGlow Spa Retreat</h3>
-                        <img src={Spa2} alt='Sample Image' className='self-center ' />
-                        <p className='self-center text-right w-[60%] text-[0.75em] leading-[1em] m-0'>
-               Experience the ultimate in relaxation and rejuvenation with our ZenGlow Spa and Wellness Retreats. Indulge in a range of luxurious spa treatments, including massages, facials, and aromatherapy, all set against the backdrop of our serene wellness retreat locations.
-                        <br></br><br />
-                        <span> <button>Learn more...</button> </span>
-                        </p>
-                    
-                      
-                    </div>
-
+					{services.map((service, key) => 
+                    <Card title={service.title} description={service.description} img={servicesImgs[key]} key={key}/>)}
 				</div>
 			</div>
             

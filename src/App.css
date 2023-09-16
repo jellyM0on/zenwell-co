@@ -107,7 +107,7 @@ p{
 
 
 #home-service-card p{
-  transform: translateY(-50px) translateX(50px); 
+  transform: translateY(-50px) translateX(70px); 
 
 }
 
@@ -116,9 +116,10 @@ p{
 
 .bg{
   background-image: url(../src/assets/home/home-services2.jpg);
-  background-position: right;
-  background-size: cover;
+  background-position: left;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   
 }
 
@@ -155,6 +156,19 @@ p{
   display: flex; 
   justify-content: center;
   align-items: center;
+}
+
+
+
+#home-description-main-bg{
+  background-image: url('./assets/home/home-description.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%; 
+
+  /* border: solid 4em #f9f6e7;
+  border-left: 0; */
 }
 
 

@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
 import {createBrowserRouter, RouterProvider, Outlet, Routes, Route} from 'react-router-dom'
 
 import NavBar from "./components/nav-bar"

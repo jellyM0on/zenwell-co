@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 #home-hero{
   height: 90vh; 
 
@@ -9,6 +12,7 @@
 
   
 }
+
 
 #home-hero-text h1{
   font-family: sans-serif;
@@ -171,8 +175,60 @@ p{
   border-left: 0; */
 }
 
+#home-reviews-img-0{
+  background-image: url('./assets/home/home-reviews-1.jpg'); 
 
-/* #root {
+}
+
+#home-reviews-img-1{
+  background-image: url('./assets/home/home-reviews-3.jpg'); 
+
+}
+
+#home-reviews-img-2{
+  background-image: url('./assets/home/home-reviews-2.jpg'); 
+ 
+
+}
+
+.home-reviews-imgs{
+  background-size: cover;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh; 
+}
+
+
+.review-card{
+  flex: 0 0 auto; 
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+
+.scroll::-webkit-scrollbar {
+   width: 12px;
+}
+
+.scroll::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px #565b2d43;
+   border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background-color: #565b2dba;
+ 
+}
+
+
+/* 
+
+
+
+#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;

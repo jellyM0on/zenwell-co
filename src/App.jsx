@@ -7,6 +7,9 @@ import './App.css'
 import {createBrowserRouter, RouterProvider, Outlet, Routes, Route} from 'react-router-dom'
 
 import NavBar from "./components/nav-bar"
+import ContactForm from './components/contact-form'
+import Footer from "./components/footer"
+
 import Home from './pages/home'
 import ErrorPage from './pages/error'
 
@@ -14,10 +17,13 @@ import TestPage from './pages/testpage'
 
 const Layout = () => {
   return(
-    <div>
-    <NavBar/>
+    <div id='content'>
+      <NavBar/>
 
-    <Outlet/>
+      <Outlet/>
+      <ContactForm/>
+      <Footer/>
+
   </div>
   )
  

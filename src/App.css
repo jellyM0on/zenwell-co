@@ -124,7 +124,7 @@ p{
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
+
 }
 
 .left, .right{
@@ -223,7 +223,33 @@ p{
  
 }
 
+.rating{
+  filter: invert(91%) sepia(15%) saturate(7497%) hue-rotate(358deg) brightness(90%) contrast(106%);
+}
 
+
+#contact-form input, 
+#contact-form textarea{
+  border-bottom: solid 1px #FFFAE4; 
+  background-color: transparent;
+  margin-bottom: 0.5em;
+}
+
+#contact-form label{
+  font-style: italic;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder
+{
+  color: #FFFAE4;
+}
+
+#contact-form textarea{
+  resize: none; 
+}
 /* 
 
 

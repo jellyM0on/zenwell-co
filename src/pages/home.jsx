@@ -6,6 +6,7 @@ import HomeServices from "../components/home-services"
 import HomeDescription from "../components/home-description"
 import HomeReviews from "../components/home-reviews"
 
+
 export default function Home(){
     return(
         <main>
@@ -15,6 +16,7 @@ export default function Home(){
             <HomeServices/>
             <HomeDescription/>
             <HomeReviews/>
+
         </main>
        
     )

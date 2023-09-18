@@ -1,44 +1,49 @@
 import { useState } from "react";
 
+import { useForm } from 'react-hook-form'; 
+import { zodResolver } from '@hookform/resolvers/zod'; 
+import { z } from "zod"; 
 
+const schema = z.object({
+    name: z.string().min(3, {message: 'Name must have at least 3 characters.'}), 
+    email: z.string().email({message: 'Email must be valid.'}), 
+    subject: z.string().min(3, {message: 'Subject must have at least 3 characters.'}), 
+    msg: z.string().min(3, {message: 'Message must have at least 3 characters.'})
+        .max(250, {message: 'Message must not exceed 250 characters.'})
+})
 
 export default function ContactForm() {
-    const [inputs, setInputs] = useState(); 
+    const { register, handleSubmit, formState } = useForm({resolver: zodResolver(schema)} ); 
+    const { errors } = formState; 
 
-    function handleSubmit(e){
-        e.preventDefault(); 
-
-        const responses = []; 
-        const responseNodes = document.querySelectorAll('.contact-input');
-        responseNodes.forEach((response, x) => responses[x] = response.value); 
-        setInputs(responses); 
-        console.log(responses); 
+    function handleSave(inputs){
+        console.log(inputs); 
     }
 
     return(
         <section className='grid grid-cols-2 py-[2em] pr-[2em] bg-[#f9f6e7] items-center'>
-            <form id='contact-form' className='flex flex-col bg-[#707a4cfe] text-[#FFFAE4]
-            p-[2em]'>
+            <form onSubmit={handleSubmit(handleSave)} id='contact-form' className='flex flex-col 
+            bg-[#707a4cfe] text-[#FFFAE4] p-[2em]'>
                 <h3 className='font-bold mb-[1em] text-[1.5em]'>Send us a message</h3>
-        
-                <label htmlFor="contact-name"></label>
-                <input type="text" name="contact-name" id="contact-name" 
-                placeholder="Your name" className='contact-input'/>
+
+                <input type="text" placeholder="Your name"
+                className={`${!errors.name?.message ? "contact-input" : "input-invalid"}`} {...register("name")}/>
+                <p>{errors.name?.message}</p>
       
+                <input type="email" {...register("email")}
+                 placeholder="you@domain.com"  className={`${!errors.email?.message ? "contact-input" : "input-invalid"}`}/>  
+                <p>{errors.email?.message}</p>
 
-                <label htmlFor="contact-email"></label>
-                <input type="email" name="contact-email" id="contact-email"
-                 placeholder="you@domain.com" className='contact-input'/>  
-                
-                <label htmlFor="contact-subject"></label>
-                <input type="text" name="contact-subject" id="contact-subject"
-                 placeholder="Subject" className='contact-input'/>
+                <input type="text" {...register("subject")}
+                 placeholder="Subject"  className={`${!errors.subject?.message ? "contact-input" : "input-invalid"}`}/>
+                <p>{errors.subject?.message}</p>
 
-                <label htmlFor="contact-msg"></label>
-                <textarea name="contact-msg" id="contact-msg" 
-                placeholder="Your message..." cols="30" rows="5" className='contact-input'></textarea>
-                
-                <button type="submit" onClick={handleSubmit} className='hover:underline mt-[1em] w-fit self-end'>Submit &gt;</button>
+                <textarea {...register("msg")} id="contact-msg" 
+                placeholder="Your message..." cols="30" rows="5"  className={`${!errors.msg?.message ? "contact-input" : "input-invalid"}`}>
+                </textarea>
+                <p>{errors.msg?.message}</p>
+
+                <button type="submit" className='hover:underline mt-[1em] w-fit self-end'>Submit &gt;</button>
             </form>
 
             <div className='flex flex-col items-end gap-[2em] text-[#565B2D]'>
@@ -52,7 +57,6 @@ export default function ContactForm() {
                 hover:bg-white hover:text-[#565B2D]'>Book a consultation &gt;</button></span></p>
                 </div>
             </div>
-
         </section>
     )
 }

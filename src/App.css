@@ -228,8 +228,7 @@ p{
 }
 
 
-#contact-form input, 
-#contact-form textarea{
+.contact-input{
   border-bottom: solid 1px #FFFAE4; 
   background-color: transparent;
   margin-bottom: 0.5em;
@@ -244,11 +243,23 @@ p{
 #contact-form input::placeholder,
 #contact-form textarea::placeholder
 {
-  color: #FFFAE4;
+  color: #fffae4ab;
 }
 
 #contact-form textarea{
   resize: none; 
+}
+
+#contact-form p{
+  font-size: 0.75em; 
+  color: rgb(84, 17, 17); 
+  height: 1.5em; 
+}
+
+.input-invalid{
+  border-bottom: solid 1px rgb(84, 17, 17);
+  background-color: transparent;
+  margin-bottom: 0.5em;
 }
 /* 
 

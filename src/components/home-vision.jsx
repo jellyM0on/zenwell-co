@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 export default function HomeDescription(){
     return(
         <section className='flex bg-[#f9f6e7] h-[100vh] pl-[2em]'>
-    
             <div className='flex flex-col justify-center text-[#565B2D]'>
                 <p className='text-[0.5em] mb-[1.5em]'>OUR VISION</p>
                 <h2 className='font-bold text-[4em] leading-[0.75em] mb-[1em]'>New experiences,<br></br>New perspectives</h2>

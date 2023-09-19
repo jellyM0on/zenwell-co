@@ -53,8 +53,8 @@ export default function HomeReviews(){
                 <div id='home-reviews-list' className='scroll pb-[1.5em] flex items-center flex-nowrap 
                 overflow-x-auto gap-[2em]'>
                    {allReviews.map((x, key) => <Review name={x.name} review={x.review} profession={x.profession} key={key}/>)}
-                    <button className='border-2 border-[#555d38fe] rounded-lg h-fit
-                     p-[1em] text-[0.5em] text-white bg-[#555d38fe] hover:bg-white hover:text-[#555d38fe]'> &gt;</button>
+                    {/* <button className='border-2 border-[#555d38fe] rounded-lg h-fit
+                     p-[1em] text-[0.5em] text-white bg-[#555d38fe] hover:bg-white hover:text-[#555d38fe]'> &gt;</button> */}
                 </div>
             </div>
         </section>

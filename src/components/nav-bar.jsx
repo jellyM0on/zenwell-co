@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, redirect } from "react-router-dom";
 
 import Logo from '../assets/logo.png'
 
@@ -14,16 +14,13 @@ const NavLink = ({title, src, id}) => {
     }
 
     if(title === 'Contact'){
-
         function handleContact(){
-            // const body = document.querySelector('#content'); 
-            // body.scrollTop = body.scrollHeight;
             window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
         }
 
         return(
             <li id={id} className='nav-link text-[#FFFAE4] font-bold text-[1em]'>
-                <Link to={src} onClick={handleContact}>{title}</Link>
+                <button onClick={handleContact}>{title}</button>
             </li>
         )
     }

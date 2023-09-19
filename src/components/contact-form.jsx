@@ -23,7 +23,7 @@ export default function ContactForm() {
     return(
         <section className='grid grid-cols-2 py-[2em] pr-[2em] bg-[#f9f6e7] items-center'>
             <form onSubmit={handleSubmit(handleSave)} id='contact-form' className='flex flex-col 
-            bg-[#707a4cfe] text-[#FFFAE4] p-[2em]'>
+            bg-[#707a4cfe] text-[#FFFAE4] p-[2em] '>
                 <h3 className='font-bold mb-[1em] text-[1.5em]'>Send us a message</h3>
 
                 <input type="text" placeholder="Your name"

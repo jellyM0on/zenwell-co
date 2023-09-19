@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 
-import {createBrowserRouter, RouterProvider, Outlet, Routes, Route} from 'react-router-dom'
+import {createBrowserRouter, RouterProvider, Outlet} from 'react-router-dom'
 
 import NavBar from "./components/nav-bar"
 import ContactForm from './components/contact-form'
 import Footer from "./components/footer"
 
 import Home from './pages/home'
+import About from './pages/about'
 import ErrorPage from './pages/error'
 
 import TestPage from './pages/testpage'
@@ -19,15 +20,13 @@ const Layout = () => {
   return(
     <div id='content'>
       <NavBar/>
-
       <Outlet/>
       <ContactForm/>
       <Footer/>
-
-  </div>
+    </div>
   )
- 
 }
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -37,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home/>,
+      },
+      {
+        path: "/about", 
+        element: <About/>
       },
       {
         path: "/test",
@@ -57,7 +60,6 @@ function getServicesData(){
 }
 
 function App() {
-
   return (
     <RouterProvider router={router}/>
   )

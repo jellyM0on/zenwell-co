@@ -252,16 +252,46 @@ p{
 
 #contact-form p{
   font-size: 0.75em; 
-  color: rgb(84, 17, 17); 
+  color: rgb(138, 25, 25); 
   height: 1.5em; 
 }
 
 .input-invalid{
-  border-bottom: solid 1px rgb(84, 17, 17);
+  border-bottom: solid 1px rgb(138, 25, 25);
   background-color: transparent;
   margin-bottom: 0.5em;
 }
+
+#about-ourstory-main-img{
+  width: 40vw; 
+  background-image: url('./assets/about/about-ourstory-1.jpg');
+  background-attachment: fixed;
+  background-size: 40%; 
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#about-ourstory-sec-img{
+  width: 40vw; 
+  background-image: url('./assets/about/about-ourstory-2.jpg');
+  background-attachment: fixed;
+  background-size: 40%; 
+  background-repeat: no-repeat;
+  background-position: left; 
+}
+
+#about-ourteam-img{
+  width: 100vw; 
+  height: 50vh; 
+  background-image: url('./assets/about/about-ourteam.jpg');
+  background-size: 100%; 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
 /* 
+
+
 
 
 

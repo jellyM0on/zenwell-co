@@ -12,6 +12,7 @@ import Footer from "./components/footer"
 
 import Home from './pages/home'
 import About from './pages/about'
+import Service from './pages/service'
 import ErrorPage from './pages/error'
 
 import TestPage from './pages/testpage'
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/test",
         element: <TestPage />
+      }, 
+      {
+        path: "/services/:servicesId", 
+        element: <Service/>
       }
     ]
   }

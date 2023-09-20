@@ -19,7 +19,7 @@ const NavLink = ({title, src, id}) => {
         }
 
         return(
-            <li id={id} className='nav-link text-[#FFFAE4] font-bold text-[1em]'>
+            <li id={id} className='nav-link text-[#FFFAE4] font-bold text-[1em] '>
                 <button onClick={handleContact}>{title}</button>
             </li>
         )
@@ -34,11 +34,16 @@ const NavLink = ({title, src, id}) => {
 
 export default function NavBar(){
     return(
-        <nav id='nav-bar' className='fixed h-fit w-full p-5 flex justify-between'>
+        <nav id='nav-bar' className='fixed h-fit w-full px-[2em] flex justify-between text-[0.75em] items-center'>
             <ul id='nav-bar-main' className='flex gap-5 items-center'>
                 <img src={Logo} alt='Zenwell Co. Logo' id='header-logo' />
                 <NavLink title='Home' src='/' id='link-home'></NavLink>
-                <NavLink title='Our Services' src='/services' id='link-services'></NavLink>
+                <div className='dropdown float-left overflow-hidden'>
+                    <button className='dropbtn'>Services</button>
+                    <div className='dropdown-content'>
+                        <a href="/">Spa</a>
+                    </div>
+                </div>
                 <NavLink title='About Us' src='/about' id='link-about'></NavLink>
                 <NavLink title='Contact' ></NavLink>   
             </ul>

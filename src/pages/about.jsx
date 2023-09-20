@@ -3,9 +3,9 @@ import OurTeam from "../components/about-ourteam"
 
 export default function About(){
     return(
-        <div>
+        <main>
             <OurStory/>
             <OurTeam/>
-        </div>
+        </main>
     )
 }

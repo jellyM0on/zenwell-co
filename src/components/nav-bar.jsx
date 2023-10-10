@@ -2,9 +2,13 @@ import { Link, useLocation, redirect } from "react-router-dom";
 
 import Logo from '../assets/logo.png'
 
+import ServicesList from '../assets/services-info.json'
+
+
 const NavLink = ({title, src, id}) => {
     let location = useLocation(); 
     
+  
     if(location.pathname === src){
         return(
             <li id={id} className='nav-link line-through text-[#FFFAE4] font-bold text-[1em]'>
@@ -32,7 +36,10 @@ const NavLink = ({title, src, id}) => {
     )
 }
 
+
 export default function NavBar(){
+   const services = ServicesList.services;
+
     return(
         <nav id='nav-bar' className='fixed h-fit w-full px-[2em] flex justify-between text-[0.75em] items-center'>
             <ul id='nav-bar-main' className='flex gap-5 items-center'>
@@ -41,7 +48,8 @@ export default function NavBar(){
                 <div className='dropdown float-left overflow-hidden'>
                     <button className='dropbtn'>Services</button>
                     <div className='dropdown-content'>
-                        <a href="/">Spa</a>
+                        {services.map((service, key) => 
+                        <a href={`/services/${service.id}`} key={key}>{service.title}</a>)}
                     </div>
                 </div>
                 <NavLink title='About Us' src='/about' id='link-about'></NavLink>

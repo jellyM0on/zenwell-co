@@ -14,13 +14,15 @@ import Home from './pages/home'
 import About from './pages/about'
 import Service from './pages/service'
 import ErrorPage from './pages/error'
-
+import ScrollToTop from './components/scroll'
 import TestPage from './pages/testpage'
 
 const Layout = () => {
+
   return(
     <div id='content'>
       <NavBar/>
+      <ScrollToTop/>
       <Outlet/>
       <ContactForm/>
       <Footer/>
@@ -65,6 +67,7 @@ function getServicesData(){
 }
 
 function App() {
+  
   return (
     <RouterProvider router={router}/>
   )

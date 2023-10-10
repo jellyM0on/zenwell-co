@@ -4,12 +4,13 @@ import Nutrition1 from '../assets/services/services-nutrition-1.jpg'
 import Teambuilding1 from '../assets/services/services-teambuilding-1.jpg'
 import Workshop1 from '../assets/services/services-workshop-1.jpg'
 
+import { Link } from 'react-router-dom'
 
 import info from '../assets/services-info.json'
 
 export default function HomeServices(){
 
-    const Card = ({title, img, description}) => {
+    const Card = ({id, title, img, description}) => {
         return(
             <div id='home-service-card' className='flex flex-col justify-center text-[#FFFAE4] h-fit '>
                 <h3 className='leading-[0.75em] font-bold z-10'>{title}</h3>
@@ -17,17 +18,15 @@ export default function HomeServices(){
                 <p className='self-center text-right w-[60%] text-[0.75em] leading-[1em] m-0'>
                     {description}
                 </p>
-                <button className='self-start ml-[30px] mt-[-40px] 
+                <Link to={`/services/${id}`} className='self-start ml-[30px] mt-[-40px] 
                     text-[0.75em] p-[0.25em] hover:underline'>
-                    Learn more	&gt;</button>
+                    Learn more	&gt;</Link>
             </div>
         )
     }
 
     let services = info.services; 
     let servicesImgs = [Spa1, Spiritual1, Teambuilding1, Workshop1, Nutrition1];
-
-    console.log(servicesImgs); 
 
     return(
         <section id='home-services' className='flex min-h-[100vh]'> 
@@ -46,7 +45,9 @@ export default function HomeServices(){
             <div className="right">
 				<div className="inner bg-[#707a4cfe]">
 					{services.map((service, key) => 
-                    <Card title={service.title} description={service.description} img={servicesImgs[key]} key={key}/>)}
+                    <Card title={service.title} 
+                    description={service.description} 
+                    img={servicesImgs[key]} id={service.id} key={key}/>)}
 				</div>
 			</div>
             

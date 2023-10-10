@@ -1,42 +1,211 @@
 {
     "services": [
         {
+            "id": "ZenGlow-Spa-and-Wellness-Retreats",
             "title": "ZenGlow Spa and Wellness Retreats", 
             "description": "Experience the ultimate in relaxation and rejuvenation with our ZenGlow Spa and Wellness Retreats. Indulge in a range of luxurious spa treatments, including massages, facials, and aromatherapy, all set against the backdrop of our serene wellness retreat locations.",
-            "full-description": "", 
-            "imgs": [ "../assets/services/services-spa-1.jpg", "../assets/services/services-spa-2.jpg"
+            "fulldescription": "Clients can expect to immerse themselves in an environment designed for ultimate relaxation. They'll find solace in the soothing sounds of nature, rejuvenating spa experiences, and wellness workshops led by experienced practitioners. Whether it's a weekend getaway or a longer retreat, ZenGlow provides a space to disconnect from stress, rejuvenate their bodies, and rediscover inner balance. Clients leave feeling renewed, refreshed, and equipped with practical self-care techniques to integrate into their everyday lives.", 
+            "imgs": [ "/src/assets/services/services-spa-1.jpg"
+            ], 
+            "inclusions": [
+                {
+                    "title":"Tranquil Spa Treatments", 
+                    "description":"Experience the ultimate relaxation with rejuvenating massages, facials, and body treatments amidst serene natural surroundings.",
+                    "imgs": ["/src/assets/services/services-spa-2.jpg"]
+                },
+                {
+                    "title":"Mindful Yoga and Meditation", 
+                    "description":"Daily sessions led by experienced instructors to reconnect with your inner self and achieve mental and emotional balance.",
+                    "imgs": ["/src/assets/services/services-spa-3.jpg"]
+                },
+                {
+                    "title":"Organic Cuisine", 
+                    "description":" Savor delicious, nourishing meals made from locally sourced, organic ingredients, supporting both your body and the environment.",
+                    "imgs": ["/src/assets/services/services-spa-4.jpg"]
+                },
+                {
+                    "title":"Guided Nature Walks", 
+                    "description":"Explore the surrounding wilderness on guided nature hikes, connecting with the outdoors and promoting mindfulness.",
+                    "imgs": ["/src/assets/services/services-spa-5.jpg"]
+                }
+            ],
+            "packages": [
+                {
+                    "title": "Basic Package", 
+                    "duration": "4 days, 3 nights", 
+                    "cost": "$1,499/head", 
+                    "location": "Zenvalley, California"
+                }
+            ], 
+            "accomodation": [
+                {
+                    "imgs": ["/src/assets/services/services-hotel-1.jpg"]
+                }
             ]
         }, 
+
         {
+            "id": "SoulHarbor-Spiritual-Retreats",
             "title":"SoulHarbor Spiritual Retreats", 
             "description": "Embark on a spiritual journey with our SoulHarbor Spiritual Retreats. These retreats provide a nurturing space for self-discovery, meditation, and soulful connection. Explore practices such as mindfulness, chakra healing, and sound therapy in a supportive and tranquil environment.", 
-            "full-description": "", 
-            "imgs": ["../assets/services/services-spiritual-1.jpg"
-
+            "fulldescription": "SoulHarbor Spiritual Retreats offer clients a transformative journey of self-discovery, inner healing, and spiritual exploration. These retreats provide a sacred space for individuals to reconnect with their inner selves and deepen their understanding of spirituality. Clients can expect a nurturing environment where they can explore practices such as meditation, mindfulness, chakra healing, and sound therapy under the guidance of experienced facilitators.", 
+            "imgs": ["/src/assets/services/services-spiritual-1.jpg"],
+            "inclusions": [
+                {
+                    "title":"Meditation and Mindfulness Practices", 
+                    "description":"Dive deep into meditation and mindfulness techniques to explore your spiritual self.",
+                    "imgs": ["/src/assets/services/services-spiritual-2.jpg"]
+                }, 
+                {
+                    "title":"Sound Healing Workshops", 
+                    "description": "Experience the therapeutic power of sound through singing bowls, gongs, and other instruments.",
+                    "imgs": ["/src/assets/services/services-spiritual-3.jpg"]
+                },
+                {
+                    "title":"Spiritual Guidance", 
+                    "description":"Receive one-on-one sessions with spiritual guides to explore your inner journey and gain clarity.",
+                    "imgs": ["/src/assets/services/services-spiritual-4.jpg"]
+                },
+                {
+                    "title":"Nature Connection", 
+                    "description":"Immerse yourself in nature with guided forest walks and meditation sessions in serene natural settings.",
+                    "imgs": ["/src/assets/services/services-spiritual-5.jpg"]
+                }
+            ],
+            "packages": [
+                {
+                    "title": "Basic Package", 
+                    "duration": "4 days, 3 nights", 
+                    "cost": "$1,499/head", 
+                    "location": "Zenvalley, California"
+                }
+            ], 
+            "accomodation": [
+                {
+                    "imgs": ["/src/assets/services/services-hotel-1.jpg"]
+                }
             ]
         }, 
+
         {
+            "id": "EcoWell-Teambuilding-Initiatives",
             "title":"EcoWell Teambuilding Initiatives", 
             "description": "EcoWell Sustainability Team Building Program is an innovative and engaging team-building experience that combines sustainability initiatives with the power of teamwork. Designed for groups of all sizes, this program empowers your team to make a positive impact on the environment while strengthening bonds, communication, and collaboration among team members.", 
-            "full-description": "", 
-            "imgs": ["../assets/services/services-teambuilding-1.jpg"
+            "fulldescription": "Unite Your Team for a Sustainable Future. EcoWell Sustainability Team Building Program is an innovative and engaging team-building experience that combines sustainability initiatives with the power of teamwork. Designed for groups of all sizes, this program empowers your team to make a positive impact on the environment while strengthening bonds, communication, and collaboration among team members.", 
+            "imgs": ["/src/assets/services/services-teambuilding-1.jpg"
+            ], 
+            "inclusions": [
+                {
+                    "title":"Interactive Sustainability Workshops", 
+                    "description":"Engage in hands-on workshops on eco-conscious practices, waste reduction, and sustainable living.",
+                    "imgs": ["/src/assets/services/services-teambuilding-2.jpg"]
+                }, 
+                {
+                    "title":"Environmental Impact Projects", 
+                    "description":"Contribute to meaningful sustainability projects such as tree planting or community clean-up initiatives.",
+                    "imgs": ["/src/assets/services/services-teambuilding-3.jpg"]
+                },
+                {
+                    "title":"Team Reflection and Growth", 
+                    "description":"Facilitated discussions and reflection sessions encourage team bonding and shared commitment to sustainability.",
+                    "imgs": ["/src/assets/services/services-teambuilding-4.jpg"]
+                },
+                {
+                    "title":"Certification of Sustainability", 
+                    "description":"Receive a certification of sustainability achievement for your organization's commitment to eco-conscious practices.",
+                    "imgs": ["/src/assets/services/services-teambuilding-5.jpg"]
+                }
 
+            ],
+            "packages": [
+                {
+                    "title": "Corporate Package", 
+                    "duration": "2 days, 1 night to 2 weeks", 
+                    "cost": "Customized price quotes available upon request", 
+                    "location": "A customized location based on your corporate needs"
+                }
+            ], 
+            "accomodation": [
+                {
+                    "imgs": ["/src/assets/services/services-hotel-2.jpg"]
+                }
             ]
         },
         {
+            "id": "MindfulJourney-Workshops-and-Courses",
             "title":"MindfulJourney Workshops and Courses", 
             "description": "Dive deeper into mindfulness and well-being with our MindfulJourney Workshops and Courses. Led by expert instructors, these online and in-person workshops cover topics such as stress reduction, mindful eating, and emotional resilience, empowering you to incorporate mindfulness into every aspect of your life.", 
-            "full-description": "", 
-            "imgs": ["../assets/services/services-workshop-1.jpg"
+            "fulldescription": "Participants can expect interactive and engaging sessions that explore mindfulness in its various forms, from mindful breathing and meditation to mindful eating and mindful movement. They'll gain a deeper awareness of their thoughts and emotions, develop a greater capacity for stress management, and discover practical tools for maintaining well-being. Clients often report reduced stress levels, improved focus, and a greater sense of overall contentment as they incorporate mindfulness practices into their daily routines. MindfulJourney equips clients with the skills needed to navigate life's challenges with grace and composure.", 
+            "imgs": ["/src/assets/services/services-workshop-1.jpg"
+            ],
+            "inclusions": [
+                {
+                    "title":"Mindfulness Foundations", 
+                    "description":"Learn the fundamentals of mindfulness, including breathwork and meditation techniques, to reduce stress and enhance focus.",
+                    "imgs": ["/src/assets/services/services-workshop-2.jpg"]
+                },
+                {
+                    "title":"Emotional Resilience Training", 
+                    "description":"Build emotional strength and resilience with practices that help you navigate life's challenges with grace.",
+                    "imgs": ["/src/assets/services/services-workshop-3.jpg"]
+                },
+                {
+                    "title":"Stress Reduction Strategies", 
+                    "description": "Develop effective stress management techniques, incorporating mindfulness into your daily life.",
+                    "imgs": ["/src/assets/services/services-workshop-4.jpg"]
+                }
 
+            ],
+            "packages": [
+                {
+                    "title": "Group Package", 
+                    "duration": "1 hour to 5 hours", 
+                    "cost": "$49/head - $149/head", 
+                    "location": "ZW Wellness Center, Zenvalley or Zoom"
+                }
+            ], 
+            "accomodation": [
+                {
+                    "imgs": ["/src/assets/services/services-workshop-5.jpg"]
+                }
             ]
         }, 
         {
+            "id":"ReviveLife-Holistic-Nutrition-Programs",
             "title":"ReviveLife Holistic Nutrition Programs", 
             "description": "Our ReviveLife Holistic Nutrition Programs are designed to revitalize your health from the inside out. Work with our certified nutritionists to create personalized meal plans, learn about nourishing your body, and discover the joy of healthy eating habits.", 
-            "full-description": "", 
-            "imgs": ["../assets/services/services-nutrition-1.jpg"
-
+            "fulldescription": "Clients receive ongoing support, education, and motivation to make healthier food choices, improve their eating habits, and achieve their wellness objectives. Whether they're seeking weight management, enhanced energy, or specific dietary guidance, ReviveLife programs offer a roadmap to better health. Clients can explore new and nourishing foods, understand the principles of balanced nutrition, and discover the joys of mindful eating. As a result, they often experience increased vitality, improved digestion, and a renewed sense of well-being, all while developing sustainable, lifelong habits that support their health journey.", 
+            "imgs": ["/src/assets/services/services-nutrition-1.jpg"
+            ],
+            "inclusions": [
+                {
+                    "title":"Personalized Nutrition Plans", 
+                    "description":"Receive customized meal plans tailored to your dietary preferences, nutritional needs, and wellness goals.",
+                    "imgs": ["/src/assets/services/services-nutrition-2.jpg"]
+                },
+                {
+                    "title":"Cooking Workshops", 
+                    "description":"Participate in hands-on cooking classes that teach you how to prepare delicious, nutritionally balanced meals.",
+                    "imgs": ["/src/assets/services/services-nutrition-3.jpg"]
+                },
+                {
+                    "title":"Holistic Wellness Coaching", 
+                    "description":"One-on-one coaching sessions with certified nutritionists to address specific health concerns and optimize your nutrition.",
+                    "imgs": ["/src/assets/services/services-nutrition-4.jpg"]
+                }
+            ],
+            "packages": [
+                {
+                    "title": "Basic Package", 
+                    "duration": "10 weeks", 
+                    "cost": "$899/head", 
+                    "location": "ZW Wellness Center, Zenvalley"
+                }
+            ], 
+            "accomodation": [
+                {
+                    "imgs": ["/src/assets/services/services-nutrition-5.jpg"]
+                }
             ]
         }
     ]

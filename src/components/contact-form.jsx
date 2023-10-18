@@ -13,12 +13,36 @@ const schema = z.object({
         .max(250, {message: 'Message must not exceed 250 characters.'})
 })
 
+const SubmissionNotification = ({state}) =>{
+    if(state === 1){
+        return(
+            <p id='submission-notif-success'>
+                Message sent! We'll reply soon.
+            </p>
+        )
+    } else if(state === 'fail'){
+        return(
+            <p id='submission-notif-fail'>
+                Failed to send the message.
+            </p> 
+        )
+    }
+}
+
 export default function ContactForm() {
-    const { register, handleSubmit, formState } = useForm({resolver: zodResolver(schema)} ); 
+    const { register, reset,  handleSubmit, formState } = useForm({resolver: zodResolver(schema)} ); 
     const { errors } = formState; 
+
+    const [submitSuccess, setSubmitSuccess] = useState(0);
 
     function handleSave(inputs){
         console.log(inputs); 
+        setSubmitSuccess(1); 
+        reset(); 
+  
+        setTimeout(() => {
+            setSubmitSuccess(0);
+        }, 10000)
     }
 
     return(
@@ -44,7 +68,11 @@ export default function ContactForm() {
                 </textarea>
                 <p>{errors.msg?.message}</p>
 
-                <button type="submit" className='hover:underline mt-[1em] w-fit self-end'>Submit &gt;</button>
+                <div className='self-end flex mt-[1em]'>
+                    <SubmissionNotification state={submitSuccess}/>
+                    <button type="submit" className='hover:underline w-fit'>Submit &gt;</button>
+                </div>
+       
             </form>
 
             <div className='flex flex-col items-end gap-[2em] text-[#565B2D]'>

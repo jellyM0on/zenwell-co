@@ -1,8 +1,8 @@
+import { useState, useEffect } from 'react';
+
 import { useForm } from 'react-hook-form'; 
 import { zodResolver } from '@hookform/resolvers/zod'; 
 import validator from "validator";
-import { useState } from 'react';
-
 import { z } from "zod"; 
 
 const basicStringSchema = z.string().min(2, {message: 'Must have at least 2 characters.'})
@@ -23,10 +23,30 @@ const schema = z.object({
   
 });
 
+const SubmissionNotification = ({state}) =>{
+    if(state === 1){
+        return(
+            <p className='bg-[#38411cfe]  w-full text-center text-[#FFFAE4] p-1'>
+                Booked successfully! <br></br> 
+                Please check your email to confirm the appointment.
+            </p>
+        )
+    } else if(state === 'fail'){
+        return(
+            <p className='bg-red-900 w-full text-center text-[#FFFAE4] p-1'>
+                Booking unsuccessful. <br></br>
+                Please contact ZenWell Co. to book your appointment.
+            </p> 
+        )
+    }
+}
 
 export default function ConsultationForm({services}){
-    const { register, formState, handleSubmit } = useForm({resolver: zodResolver(schema)} ); 
+
+    const { register, reset, formState, handleSubmit } = useForm({resolver: zodResolver(schema)} ); 
     const { errors } = formState; 
+
+    const [submitSuccess, setSubmitSuccess] = useState(0);
 
     const InputField = ({label, name, type}) => {
 
@@ -36,7 +56,7 @@ export default function ConsultationForm({services}){
                 <input type={type} name={name} id={name} {...register(`${name}`)} />
                 <p className='text-[0.75em] text-red-900'>{errors[name]?.message}</p>
             </div>
-        )
+         )
     }
 
     const ServicesField = ({service, id}) => {
@@ -53,10 +73,17 @@ export default function ConsultationForm({services}){
 
     function handleSave(inputs){
         console.log(inputs); 
+
+        setSubmitSuccess(1); 
+        reset(); 
+
+        setTimeout(() => {
+            setSubmitSuccess(0);
+        }, 10000)
     }
 
     return(
-        <section className='flex justify-center items-center'>
+        <section className='flex justify-center '>
             <form onSubmit={handleSubmit(handleSave)} action="" id='consultation-form'
             className='w-[75%] flex flex-col'>
 
@@ -96,7 +123,6 @@ export default function ConsultationForm({services}){
 
                     <div className='section-container'>
                         <InputField label='Preferred Date' name='meetingDate' type='date'/>
-                        {/* <InputField label='Preferred Time' name='meetingTime' type='time'/> */}
                         <div className='flex flex-col justify-center gap-[0.25em]'>
                             <label htmlFor="meetingTime" className='text-[0.75em]'>Preferred Time</label>
                             <select name="meetingTime" id="meetingTime" className='bg-transparent border-b-2 border-black' 
@@ -120,6 +146,7 @@ export default function ConsultationForm({services}){
                 </fieldset>
 
                 <button type='submit' className='hover:underline'>Submit &gt;</button>
+                <SubmissionNotification state={submitSuccess}/>
             </form>
         </section>
     )

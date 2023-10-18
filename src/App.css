@@ -301,6 +301,18 @@ p{
   height: 1.5em; 
 }
 
+#contact-form #submission-notif-success{
+  font-size: 1em; 
+  color: #FFFAE4;
+  margin-right: 1em;
+}
+
+#contact-form #submission-notif-fail{
+  font-size: 1em; 
+  color: rgb(138, 25, 25);
+  margin-right: 1em;
+}
+
 .input-invalid{
   border-bottom: solid 1px rgb(138, 25, 25);
   background-color: transparent;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { useForm } from 'react-hook-form'; 
 import { zodResolver } from '@hookform/resolvers/zod'; 
@@ -53,8 +54,8 @@ export default function ContactForm() {
                     <p className='font-semibold text-[1.5em] mb-[0.75em]'>Get in touch with us at</p>
                     <p>zenwellco@fakemail.com / +63 123 45678</p>
                     <p className='mb-[0.75em]'>South Dakota, Port Priscillastad, 678 Frederik Prairie </p>
-                    <p>or <span> <button className=' p-[0.5em] bg-[#565B2D] rounded-lg w-fit text-white border-2 border-[#565B2D]
-                hover:bg-white hover:text-[#565B2D]'>Book a consultation &gt;</button></span></p>
+                    <p>or <span> <Link to='/consultation' className=' p-[0.5em] bg-[#565B2D] rounded-lg w-fit text-white border-2 border-[#565B2D]
+                hover:bg-white hover:text-[#565B2D]'>Book a consultation &gt;</Link></span></p>
                 </div>
             </div>
         </section>

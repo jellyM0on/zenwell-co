@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Package({title, cost, duration, location}){
     return(
         <div>
@@ -23,8 +25,8 @@ export default function ServicePackages({info, accomodation}){
                <Package title={pkg.title} cost={pkg.cost} duration={pkg.duration}
                location={pkg.location} key={key}/>)}
              
-                <button className=' p-[0.5em] rounded-lg w-fit text-[#565B2D] bg-[#f9f6e7] border-2 border-[#565B2D]
-                hover:bg-[#565B2D]  hover:text-[#f9f6e7]'>Book a consultation &gt;</button>
+                <Link to='/consultation' className=' p-[0.5em] rounded-lg w-fit text-[#565B2D] bg-[#f9f6e7] border-2 border-[#565B2D]
+                hover:bg-[#565B2D]  hover:text-[#f9f6e7]'>Book a consultation &gt;</Link>
             </div>
 
             <div className='bg-fixed flex flex-col justify-center items-end overflow-hidden'>

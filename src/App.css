@@ -338,6 +338,29 @@ p{
 .text-stroke{
   -webkit-text-stroke: 1px #FFFAE4;
 }
+
+#consultation-form input{
+  width: 100%; 
+  background-color: transparent;
+  border-bottom: 2px solid black; 
+}
+
+#consultation-form .section-container{
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+  /* border: 1px solid black;  */
+}
+
+#consultation-form .field-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0 0.5em 0; 
+}
+
+#consultation-form fieldset{
+  margin: 0.5em 0 0.5em 0; 
+}
 /* 
 
 

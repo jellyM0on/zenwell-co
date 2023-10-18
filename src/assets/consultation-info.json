@@ -1,0 +1,14 @@
+{
+    "onSiteProcess": [
+        ["Inquiry", "Begin by reaching out to our team through our website or customer service and wait for a confirmation email."], 
+        ["Personalized Assessment", "Our well-being experts will contact you to discuss your specific goals and preferences. Together, we'll tailor your consultation to ensure it meets your expectations."], 
+        ["Customized Arrangements", "Once we have a clear understanding of your needs, we'll create a customized consultation plan. This may include selecting the ideal wellness retreat location, appointment scheduling, and other details specific to your chosen service."], 
+        ["Confirmation", " We'll provide you with a comprehensive itinerary and confirmation of your On-Site Consultation, ensuring you have all the information you need for a seamless experience."]
+    ],
+
+    "onlineProcess": [
+        ["Inquiry", "Begin by reaching out to our team through our website or customer service and wait for a confirmation email."],
+        ["Scheduling", "Once your appointment is scheduled, you'll receive an email confirmation with a link to access your online consultation at the designated time." ], 
+        ["Virtual Meeting", "At the appointed time, you'll join a virtual meeting with our certified experts who will guide you through your chosen service, whether it's a nutrition program, mindfulness workshop, or wellness coaching."]
+    ]
+}

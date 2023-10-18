@@ -14,6 +14,8 @@ import Home from './pages/home'
 import About from './pages/about'
 import Service from './pages/service'
 import ErrorPage from './pages/error'
+import ConsultationBooking from './pages/consultation'
+
 import ScrollToTop from './components/scroll'
 import TestPage from './pages/testpage'
 
@@ -51,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/services/:servicesId", 
         element: <Service/>
+      },
+      {
+        path: "/consultation",
+        element: <ConsultationBooking/>
       }
     ]
   }
@@ -58,16 +64,7 @@ const router = createBrowserRouter([
   
 ]); 
 
-function getServicesData(){
-  fetch('./assets/service-info.json')
-  .then(res => {
-    return res.json(); 
-  })
-  .then(data => console.log(data)); 
-}
-
 function App() {
-  
   return (
     <RouterProvider router={router}/>
   )

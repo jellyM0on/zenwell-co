@@ -2,6 +2,7 @@ body{
   overflow-x: hidden;
 }
 #home-hero{
+  width: 100vw;
   height: 90vh; 
 
   background-image: url('./assets/home/hero.jpg');

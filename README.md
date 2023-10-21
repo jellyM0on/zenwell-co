@@ -16,7 +16,7 @@ usability, responsiveness, and SEO.
 
 <h6>Visual Elements</h6>
 <ul>
-    <li>Coloring:
+    <li>Coloring: <br>
         <img src='/documentation/color-palette.png' width='600'>
     </li>
     <li>Typography: Sans Serif fonts elicit a sense of modernity, clarity, and cleanliness.</li>
@@ -32,52 +32,77 @@ usability, responsiveness, and SEO.
     key themes of well-being and mindfulness.</li>
 </ul>
 
+<h6>Video Documentation</h6>
+
+
+https://github.com/jellyM0on/zenwell-co/assets/108628237/1fcc11a0-fa83-4883-b4e6-9391c80dc289
+
+
 <h6>Key Sections</h6>
 <ul>
     <li>Home: <br>
-        - Hero
+        - Hero <br>
         <img src='/documentation/home-hero.png' width='600'>
-        - Our Mission
+        <br> 
+        - Our Mission <br>
         <img src='/documentation/home-mission.png' width='600'>
-        - What We Do showing a list of ZenWell's services
+         <br>
+        - What We Do showing a list of ZenWell's services <br>
         <img src='/documentation/home-services.png' width='600'>
-        - Our Vision with a Call to Action button redirecting to the About Us page
+         <br>
+        - Our Vision with a Call to Action button redirecting to the About Us page <br>
         <img src='/documentation/home-vision.png' width='600'>
-        - Reviews
+         <br>
+        - Reviews <br>
         <img src='/documentation/home-reviews.png' width='600'>
+        <br>
     </li>
-    <li>Services: 
-        - Description
+    <li>Services: <br>
+        - Description <br>
         <img src='/documentation/services-descrip.png' width='600'>
-        - Video
+         <br>
+        - Video <br>
         <img src='/documentation/services-video.png' width='600'>
-        - Inclusions
+         <br>
+        - Inclusions <br>
         <img src='/documentation/services-inclusions.png' width='600'>
-        - Packages
+         <br>
+        - Packages <br>
         <img src='/documentation/services-packages.png' width='600'>
+        <br>
     </li>
     <li>About Us: </li>
-        - Our Story
+        - Our Story <br>
         <img src='/documentation/about-story.png' width='600'>
+         <br>
         <img src='/documentation/about-story2.png' width='600'>
-        - Our Team
+         <br>
+        - Our Team <br>
         <img src='/documentation/about-team.png' width='600'>
+        <br>
     <li>Contact Form: </li>
         <img src='/documentation/contact-def.png' width='600'>
-        - Validation 
+        <br>
+        - Validation <br>
         <img src='/documentation/contact-inval.png' width='600'>
-        - Submission Success
+        <br>
+        - Submission Success <br>
         <img src='/documentation/contact-success.png' width='600'>
-        - Submission Fail
+         <br>
+        - Submission Fail <br>
         <img src='/documentation/contact-fail.png' width='600'>
+        <br>
     <li>Consultation Form: </li>
         <img src='/documentation/consult-def.png' width='600'>
-        - Validation 
+         <br>
+        - Validation <br>
         <img src='/documentation/consult-inval.png' width='600'>
-        - Submission Success
+         <br>
+        - Submission Success <br>
         <img src='/documentation/consult-success.png' width='600'>
-        - Submission Fail
-        <img src='/documentation/consult-fail.png' width='600'>
+         <br>
+        - Submission Fail <br>
+        <img src='/documentation/connsult-fail.png' width='600'>
 </ul>
 
 <h5>Technology Stack</h5>

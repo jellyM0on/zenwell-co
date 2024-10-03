@@ -42,7 +42,7 @@ https://github.com/jellyM0on/zenwell-co/assets/108628237/1fcc11a0-fa83-4883-b4e6
 <ul>
     <li>Home: <br>
         - Hero <br>
-        <img src='/documentation/home-hero.png' width='600'>
+        <img src='/documentation/home-hero-fix.png' width='600'>
         <br> 
         - Our Mission <br>
         <img src='/documentation/home-mission.png' width='600'>
